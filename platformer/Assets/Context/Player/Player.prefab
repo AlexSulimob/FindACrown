@@ -1,0 +1,1773 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4066059216658147282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4066059216658147283}
+  m_Layer: 6
+  m_Name: TouchingWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4066059216658147283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059216658147282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.229, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4066059218229316730}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4066059217288310589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4066059217288310590}
+  - component: {fileID: 4066059217288310591}
+  m_Layer: 6
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4066059217288310590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059217288310589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.9742, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4066059218229316730}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &4066059217288310591
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059217288310589}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 0.05}
+  m_Direction: 1
+--- !u!1 &4066059218229316735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4066059218229316730}
+  - component: {fileID: 4066059218229316729}
+  - component: {fileID: 4066059218229316728}
+  - component: {fileID: 4066059218229316731}
+  - component: {fileID: 4066059218229316708}
+  - component: {fileID: 4066059218229316709}
+  - component: {fileID: 4066059218229316710}
+  - component: {fileID: 4066059218229316711}
+  m_Layer: 6
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4066059218229316730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.62, y: -0.95, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4066059217288310590}
+  - {fileID: 4066059216658147283}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &4066059218229316729
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -432674713727891427, guid: 6e1acb69e4eb9b94f81e1e1bb9689b33, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &4066059218229316728
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 2
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!61 &4066059218229316731
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.17450249}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.6017327}
+  m_EdgeRadius: 0
+--- !u!114 &4066059218229316708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: d2be9cebf2e19d44c91817ffc7488f21, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &4066059218229316709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: PlayerMovementFSM
+    startState: Idle
+    states:
+    - name: Idle
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 554
+        y: 110
+        width: 100
+        height: 64
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Movement
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Movement
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Jump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Jump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.ResetAirJumps
+        - PlaytformerPlayersActions.JumpInput
+        - PlaytformerPlayersActions.GroundCayouteTime
+        - PlaytformerPlayersActions.GroundCheck
+        - PlaytformerPlayersActions.IsIdleCheck
+        - PlaytformerPlayersActions.SetStateAnimation
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 000000000000010101010101
+        actionIsOpen: 010101010101010101010101
+        actionStartIndex: 00000000010000000200000003000000040000000500000006000000060000000700000007000000090000000b000000
+        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c53001000000008861160400000000d8973105d897310563505301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.IsIdleCheck
+        - PlayerBehaviour.GroundCheck
+        - PlayerBehaviour.GroundCayouteTime
+        - PlayerBehaviour.JumpInput
+        - PlayerBehaviour.ResetAirJumps
+        - Jump
+        - 
+        - InAir
+        - 
+        - Movement
+        - Idle
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 03000000030000000300000003000000030000000300000017000000170000001700000017000000170000000300000001000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - Jump
+        - Grounded
+        - NotGrounded
+        - Idle
+        - Movement
+        - animName
+        - EveryFrame
+        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b00000000000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+    - name: Movement
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 940.9297
+        y: 101.546875
+        width: 100
+        height: 64
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Idle
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Idle
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Jump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Jump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.ResetAirJumps
+        - PlaytformerPlayersActions.IsIdleCheck
+        - PlaytformerPlayersActions.JumpInput
+        - PlaytformerPlayersActions.GroundCayouteTime
+        - PlaytformerPlayersActions.GroundCheck
+        - PlaytformerPlayersActions.SetStateAnimation
+        - PlaytformerPlayersActions.Flip
+        - PlaytformerPlayersActions.HorizontalMovement
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 00000000000000000101010101010101
+        actionIsOpen: 01010101010101010101010101010101
+        actionStartIndex: 000000000100000002000000030000000400000005000000060000000700000008000000080000000a0000000b0000000b0000000d0000000f0000000f000000
+        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c5300178c5300178c5300100000000d89731058861160400000000d897310563505301000000004c5a2401
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.HorizontalMovement
+        - PlayerBehaviour.Flip
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.GroundCheck
+        - PlayerBehaviour.GroundCayouteTime
+        - PlayerBehaviour.JumpInput
+        - PlayerBehaviour.IsIdleCheck
+        - PlayerBehaviour.ResetAirJumps
+        - Idle
+        - 
+        - Jump
+        - 
+        - InAir
+        - Run
+        byteData: 01000020410000a041
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0300000003000000030000000300000003000000030000000300000003000000170000001700000017000000170000001700000003000000010000000200000002000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - Idle
+        - Movement
+        - Jump
+        - Grounded
+        - NotGrounded
+        - animName
+        - EveryFrame
+        - speed
+        - horizontalDrag
+        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d000000000000000100000005000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000400000004000000
+    - name: Dash
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 240.58594
+        y: 208.85156
+        width: 100
+        height: 80
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Death
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Death
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Grounded
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grounded
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Jump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Jump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.SetStateAnimation
+        - PlaytformerPlayersActions.Dash
+        - PlaytformerPlayersActions.GroundCheck
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 000000010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 00000000010000000200000003000000050000000a000000
+        actionHashCodes: 78c5300178c5300178c53001635053011f8fb902d8973105
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.Dash
+        - PlayerBehaviour.GroundCheck
+        - Dash
+        - Jump
+        - Grounded
+        - InAir
+        byteData: 009a99193e00007a440000a0400000803e
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 030000000300000003000000030000000100000017000000020000000200000002000000020000001700000017000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - animName
+        - EveryFrame
+        - jumpInterruption
+        - interruptionAfter
+        - dashPower
+        - dashDrag
+        - dashTime
+        - Grounded
+        - NotGrounded
+        paramDataPos: 0000000001000000020000000300000000000000040000000100000005000000090000000d0000000500000006000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000040000000400000004000000040000000000000000000000
+    - name: WallSliding
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 959.4922
+        y: 426.0547
+        width: 100
+        height: 64
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Jump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WallJump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Grounded
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grounded
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.ResetAirJumps
+        - PlaytformerPlayersActions.TouchingWallCheck
+        - PlaytformerPlayersActions.InAirCayouteTime
+        - PlaytformerPlayersActions.JumpInput
+        - PlaytformerPlayersActions.WallSlide
+        - PlaytformerPlayersActions.SetStateAnimation
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 000000000000010101010101
+        actionIsOpen: 010101010101010101010101
+        actionStartIndex: 0000000001000000020000000300000004000000050000000600000006000000090000000a0000000b0000000c000000
+        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c5300100000000ba8795021c346c0188611604deb1630363505301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.WallSlide
+        - PlayerBehaviour.JumpInput
+        - PlayerBehaviour.InAirCayouteTime
+        - PlayerBehaviour.TouchingWallCheck
+        - PlayerBehaviour.ResetAirJumps
+        - 
+        - Grounded
+        - InAir
+        - Jump
+        - WallSlide
+        byteData: 010000a0c001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0300000003000000030000000300000003000000030000001700000017000000170000000100000017000000020000000300000001000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - TouchingWall
+        - Grounded
+        - InAir
+        - forShort
+        - Jump
+        - slidingSpeed
+        - animName
+        - EveryFrame
+        paramDataPos: 0000000001000000020000000300000004000000050000000600000007000000080000000000000009000000010000000a00000005000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000100000000000000040000000000000001000000
+    - name: InAir
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 718.1953
+        y: 329.51562
+        width: 109
+        height: 96
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Grounded
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grounded
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: TouchingWall
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: TouchingWall
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Jump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Jump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: WallJump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WallJump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: AirJump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: AirJump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.InAirJumpInputsController
+        - PlaytformerPlayersActions.Flip
+        - PlaytformerPlayersActions.TouchingWallCheck
+        - PlaytformerPlayersActions.GroundCheck
+        - PlaytformerPlayersActions.VariableJumpHeight
+        - PlaytformerPlayersActions.FallingModification
+        - PlaytformerPlayersActions.HorizontalMovement
+        - PlaytformerPlayersActions.SetStateAnimation
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 00000000000000000101010101010101
+        actionIsOpen: 01010101010101010101010101010101
+        actionStartIndex: 00000000010000000200000003000000040000000500000006000000070000000800000008000000080000000b0000000d0000000e0000001300000015000000
+        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c5300178c5300178c530010000000000000000ba879502d8973105deb16303f6d5f2014c5a240163505301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.HorizontalMovement
+        - PlayerBehaviour.FallingModification
+        - PlayerBehaviour.VariableJumpHeight
+        - PlayerBehaviour.GroundCheck
+        - PlayerBehaviour.TouchingWallCheck
+        - PlayerBehaviour.Flip
+        - PlayerBehaviour.InAirJumpInputsController
+        - TouchingWall
+        - Grounded
+        - 
+        - Grounded
+        - 
+        - InAir
+        byteData: 0000003f000020c2010000803f000040400000803e000020410000a04101
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0300000003000000030000000300000003000000030000000300000003000000170000001700000017000000170000001700000002000000020000000100000002000000020000000200000002000000020000000300000001000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - TouchingWall
+        - Grounded
+        - InAir
+        - Grounded
+        - NotGrounded
+        - heightMultiplier
+        - maxFallingSpeed
+        - changeFallingGravity
+        - velocityYWhenGravityChange
+        - newGravity
+        - timeToChangeGravity
+        - speed
+        - horizontalDrag
+        - animName
+        - EveryFrame
+        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c000000000000000400000008000000090000000d0000001100000015000000190000000d0000001d000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000040000000100000004000000040000000400000004000000040000000000000001000000
+    - name: Jump
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 423.96094
+        y: 336
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Grounded
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grounded
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.Jump
+        - PlaytformerPlayersActions.GroundCheck
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 00000101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000010000000200000003000000
+        actionHashCodes: 78c5300178c53001deb16303d8973105
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.Jump
+        - PlayerBehaviour.GroundCheck
+        - Grounded
+        - InAir
+        byteData: 00004844
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0300000003000000020000001700000017000000
+        paramName:
+        - actionName
+        - actionName
+        - JumpForce
+        - Grounded
+        - NotGrounded
+        paramDataPos: 0000000001000000000000000200000003000000
+        paramByteDataSize: 0000000000000000040000000000000000000000
+    - name: WallJump
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 960.9844
+        y: 517.0781
+        width: 136
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: ReverseWallJump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: ReverseJump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.Flip
+        - PlaytformerPlayersActions.WallJump
+        - PlaytformerPlayersActions.SetStateAnimation
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 000000010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 000000000100000002000000030000000300000008000000
+        actionHashCodes: 78c5300178c5300178c5300100000000cd34560263505301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.WallJump
+        - PlayerBehaviour.Flip
+        - InAir
+        byteData: 0000803f0000803f0000484400009644000000009a99193e01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 03000000030000000300000008000000020000000200000002000000020000000300000001000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - wallJumpAngle
+        - horizontalJumpForce
+        - verticalJumpForce
+        - drag
+        - duration
+        - animName
+        - EveryFrame
+        paramDataPos: 00000000010000000200000000000000080000000c00000010000000140000000300000018000000
+        paramByteDataSize: 00000000000000000000000008000000040000000400000004000000040000000000000001000000
+    - name: Grounded
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 729.5625
+        y: 187.23438
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Movement
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Movement
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Idle
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Idle
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.ResetAirJumps
+        - PlaytformerPlayersActions.IsIdleCheck
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 00000101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000010000000200000002000000
+        actionHashCodes: 78c5300178c5300100000000d8973105
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.IsIdleCheck
+        - PlayerBehaviour.ResetAirJumps
+        - Idle
+        - Movement
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 03000000030000001700000017000000
+        paramName:
+        - actionName
+        - actionName
+        - Idle
+        - Movement
+        paramDataPos: 00000000010000000200000003000000
+        paramByteDataSize: 00000000000000000000000000000000
+    - name: TouchingWall
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 955.60156
+        y: 320.0703
+        width: 109
+        height: 80
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Grounded
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grounded
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Jump
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WallJump
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: WallSlide
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: WallSliding
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.WallSlideCheck
+        - PlaytformerPlayersActions.VariableJumpHeight
+        - PlaytformerPlayersActions.SetStateAnimation
+        - PlaytformerPlayersActions.ResetAirJumps
+        - PlaytformerPlayersActions.InAirCayouteTime
+        - PlaytformerPlayersActions.JumpInput
+        - PlaytformerPlayersActions.TouchingWallCheck
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0000000000000001010101010101
+        actionIsOpen: 0101010101010101010101010101
+        actionStartIndex: 000000000100000002000000030000000400000005000000060000000700000008000000090000000b0000000b0000000c0000000d000000
+        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c5300178c5300188611604deb1630363505301000000001c346c0188611604ba879502
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.VariableJumpHeight
+        - PlayerBehaviour.WallSlideCheck
+        - PlayerBehaviour.TouchingWallCheck
+        - PlayerBehaviour.JumpInput
+        - PlayerBehaviour.InAirCayouteTime
+        - PlayerBehaviour.ResetAirJumps
+        - WallSlide
+        - InAir
+        - Jump
+        - 
+        - Grounded
+        - InAir
+        byteData: 0000003f0100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 03000000030000000300000003000000030000000300000003000000170000000200000003000000010000000100000017000000170000001700000017000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - WallSlide
+        - heightMultiplier
+        - animName
+        - EveryFrame
+        - forShort
+        - Jump
+        - TouchingWall
+        - Grounded
+        - InAir
+        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000000000000080000000400000005000000090000000a0000000b0000000c000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000400000000000000010000000100000000000000000000000000000000000000
+    - name: Death
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 62.617188
+        y: 129.07031
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: ReverseJump
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 970
+        y: 592.0781
+        width: 111
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: TouchingWall
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: TouchingWall
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.ChangeHorizontalFacingVelocity
+        - PlaytformerPlayersActions.Flip
+        - PlaytformerPlayersActions.TouchingWallCheck
+        - PlaytformerPlayersActions.SetStateAnimation
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0000000001010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 0000000001000000020000000300000004000000050000000500000008000000
+        actionHashCodes: 78c5300178c5300178c5300178c530018861160400000000ba87950263505301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.ChangeHorizontalFacingVelocity
+        - PlayerBehaviour.SetStateAnimation
+        - PlayerBehaviour.Flip
+        - PlayerBehaviour.TouchingWallCheck
+        - InAir
+        - TouchingWall
+        - 
+        - InAir
+        - InAir
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 03000000030000000300000003000000170000001700000017000000170000000300000001000000
+        paramName:
+        - actionName
+        - actionName
+        - actionName
+        - actionName
+        - EventOnEnd
+        - TouchingWall
+        - Grounded
+        - InAir
+        - animName
+        - EveryFrame
+        paramDataPos: 00000000010000000200000003000000040000000500000006000000070000000800000000000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000
+    - name: AirJump
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 435
+        y: 423.5
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Grounded
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grounded
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InAir
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: InAir
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.Jump
+        - PlaytformerPlayersActions.GroundCheck
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 00000101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000010000000200000003000000
+        actionHashCodes: 78c5300178c53001deb16303d8973105
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - PlayerBehaviour.Jump
+        - PlayerBehaviour.GroundCheck
+        - Grounded
+        - InAir
+        byteData: 00004844
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0300000003000000020000001700000017000000
+        paramName:
+        - actionName
+        - actionName
+        - JumpForce
+        - Grounded
+        - NotGrounded
+        paramDataPos: 0000000001000000000000000200000003000000
+        paramByteDataSize: 0000000000000000040000000000000000000000
+    events:
+    - name: Idle
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Movement
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: InAir
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Grounded
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Jump
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: TouchingWall
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: WallJump
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: WallSlide
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Dash
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Death
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: ReverseWallJump
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: AirJump
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: ToCheck
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: Dash
+        isSystemEvent: 0
+        isGlobal: 0
+      toState: Dash
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Death
+        isSystemEvent: 0
+        isGlobal: 0
+      toState: Death
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!114 &4066059218229316710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cac76ddcfa1f08468d6209ad4d2654e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitHorizontalDrag: 40
+  InitVerticalDrag: 0
+  groundCheck: {fileID: 4066059217288310590}
+  groundCheckRadius: 0.5
+  wallCheck: {fileID: 4066059216658147283}
+  wallCheckDistance: 0.52
+  CollisionLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!95 &4066059218229316711
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4066059218229316735}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c93bf2ee048ff5f4e88cfabd79efad79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
