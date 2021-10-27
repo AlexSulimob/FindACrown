@@ -37,7 +37,7 @@ namespace PlaytformerPlayersActions
                 player.PlayerTimings.WallOffCayouteTime.EndTimer();
                 Fsm.FsmComponent.SendEvent("WallJump");
             }
-            else if (player.Mediator.CanAirJump()) //air jump
+            else if (player.Mediator.CanAirJump() && player.AllowedAbilities.CanAirJump) //air jump
             {
                 Fsm.FsmComponent.SendEvent("AirJump");
                 player.Mediator.PerformAirJump();

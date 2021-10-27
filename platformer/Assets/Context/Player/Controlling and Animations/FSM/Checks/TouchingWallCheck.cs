@@ -19,7 +19,7 @@ namespace PlaytformerPlayersActions
         {
             base.OnEnter();
 
-            if (player.CheckTouchingWall())
+            if (player.CheckTouchingWall() && player.AllowedAbilities.CanWallSlide)
             {
                 Fsm.Event(TouchingWall);
             }

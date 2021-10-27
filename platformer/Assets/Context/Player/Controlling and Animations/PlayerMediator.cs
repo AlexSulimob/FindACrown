@@ -11,14 +11,16 @@ public class PlayerMediator
 
     public int CurrentWallDirections { get; set; }
 
+    public int AmountOfJumps { get; private set; }
+    public int JumpLefts { get; set; }
+
     public PlayerMediator()
     {
         AmountOfJumps = 1;
     }
 
     #region AirJumps
-    public int AmountOfJumps { get; private set; }
-    public int JumpLefts { get; set; }
+
     
     public void PerformAirJump()
     {

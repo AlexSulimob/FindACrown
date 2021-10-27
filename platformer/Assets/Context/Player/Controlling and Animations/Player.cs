@@ -48,6 +48,7 @@ namespace PlaytformerPlayersActions
 
         public PlayerMediator Mediator { get; private set; }
         public Timers PlayerTimings { get; private set; }
+        public PlayerAllowedAbilities AllowedAbilities { get; private set; }
 
         #endregion
 
@@ -63,11 +64,15 @@ namespace PlaytformerPlayersActions
             PlayerTimings = new Timers();
             Anim = GetComponent<Animator>();
             Sprite = GetComponent<SpriteRenderer>();
+            AllowedAbilities = new PlayerAllowedAbilities();
 
             BaseGravity = Rb.gravityScale;
             HorzontalDrag = InitHorizontalDrag;
             VerticalDrag = InitVerticalDrag;
-  
+
+            AllowedAbilities.CanAirJump = false;
+            AllowedAbilities.CanDash = false;
+            AllowedAbilities.CanWallSlide = false;
         }
 
         private void FixedUpdate()
@@ -111,7 +116,7 @@ namespace PlaytformerPlayersActions
         }
         void OnDash()
         {
-            if (PlayerTimings.DashCd.Check())
+            if (PlayerTimings.DashCd.Check() && AllowedAbilities.CanDash)
                 PlyerFsm.SendEvent("Dash");
         }
         #endregion
