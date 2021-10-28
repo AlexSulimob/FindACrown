@@ -49,7 +49,7 @@ namespace PlaytformerPlayersActions
         public PlayerMediator Mediator { get; private set; }
         public Timers PlayerTimings { get; private set; }
         public PlayerAllowedAbilities AllowedAbilities { get; private set; }
-
+        public Vector2 CurrentRespawnPoint { get; set; }
         #endregion
 
         public event Action JumpInput;
@@ -73,6 +73,13 @@ namespace PlaytformerPlayersActions
             AllowedAbilities.CanAirJump = false;
             AllowedAbilities.CanDash = false;
             AllowedAbilities.CanWallSlide = false;
+        }
+
+        public void Death()
+        {
+            Rb.velocity = Vector2.zero;
+            Rb.position = CurrentRespawnPoint; // respawn
+
         }
 
         private void FixedUpdate()
