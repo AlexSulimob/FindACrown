@@ -50,6 +50,7 @@ namespace PlaytformerPlayersActions
         public Timers PlayerTimings { get; private set; }
         public PlayerAllowedAbilities AllowedAbilities { get; private set; }
         public Vector2 CurrentRespawnPoint { get; set; }
+        public OnewayPlatformManager CurrentOnewayPlatform { get; set; }
         #endregion
 
         public event Action JumpInput;
@@ -155,13 +156,14 @@ namespace PlaytformerPlayersActions
             return Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDirection, wallCheckDistance, CollisionLayer);
         }
         #endregion
-
+        /*
         public OnewayPlatformManager CheckOnewayPlatformManager()
         {
             var col = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1f, 0.05f), CapsuleDirection2D.Horizontal, 0f, CollisionLayer);
             return col.GetComponent<OnewayPlatformManager>();
 
         }
+        */
 
         private void OnDrawGizmos()
         {

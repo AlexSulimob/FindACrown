@@ -1,3 +1,4 @@
+using PlaytformerPlayersActions;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class OnewayPlatformManager : MonoBehaviour
 
     float _initSurfaceArc;
     int _initLayer;
+
     void Start()
     {
         platformEffector2d = GetComponent<PlatformEffector2D>();
@@ -29,5 +31,22 @@ public class OnewayPlatformManager : MonoBehaviour
         yield return new WaitForSeconds(timeToDisableEffector);
         platformEffector2d.surfaceArc = _initSurfaceArc;
         gameObject.layer = _initLayer;
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        var player = other.gameObject.GetComponent<Player>();
+        if (player != null)
+        {
+            player.CurrentOnewayPlatform = this;
+        }
+    }
+    public void OnCollisionExit2D(Collision2D other)
+    {
+        var player = other.gameObject.GetComponent<Player>();
+        if (player != null)
+        {
+            player.CurrentOnewayPlatform = null;
+        }
     }
 }

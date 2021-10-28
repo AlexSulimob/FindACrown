@@ -29,20 +29,24 @@ namespace PlaytformerPlayersActions
         {
             OnewayPlatformJumpLogic();
         }
+
         void OnewayPlatformJumpLogic()
         {
-            if (player.Movement.y < -0.1f)
+            if (player.Movement.y < -0.1f && player.CurrentOnewayPlatform != null)
             {
-                OnewayPlatformManager opm = player.CheckOnewayPlatformManager();
-                if (opm != null)
+                Fsm.Event(InAir);
+                player.CurrentOnewayPlatform.DisableEffector();
+                /*
+                if (player.CurrentOnewayPlatform != null)
                 {
                     Fsm.Event(InAir);
-                    opm.DisableEffector();
+                    player.CurrentOnewayPlatform.DisableEffector();
                 }
                 else
                 {
                     Fsm.Event(Jump);
                 }
+                */
             }
             else
             {
