@@ -311,11 +311,12 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.MissingAction
         - HutongGames.PlayMaker.Actions.MissingAction
         - PlaytformerPlayersActions.ResetAirJumps
-        - PlaytformerPlayersActions.JumpInput
         - PlaytformerPlayersActions.GroundCayouteTime
         - PlaytformerPlayersActions.GroundCheck
         - PlaytformerPlayersActions.IsIdleCheck
         - PlaytformerPlayersActions.SetStateAnimation
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.GroundJumpInput
         customNames:
         - 
         - 
@@ -329,10 +330,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 000000000000010101010101
-        actionIsOpen: 010101010101010101010101
-        actionStartIndex: 00000000010000000200000003000000040000000500000006000000060000000700000007000000090000000b000000
-        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c53001000000008861160400000000d8973105d897310563505301
+        - 
+        actionEnabled: 00000000000001010101010001
+        actionIsOpen: 01010101010101010101010101
+        actionStartIndex: 000000000100000002000000030000000400000005000000060000000600000006000000080000000a0000000c0000000d000000
+        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c530010000000000000000d8973105d89731056350530178c53001d8973105
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -362,18 +364,20 @@ MonoBehaviour:
         - PlayerBehaviour.GroundCayouteTime
         - PlayerBehaviour.JumpInput
         - PlayerBehaviour.ResetAirJumps
-        - Jump
         - 
         - InAir
         - 
         - Movement
         - Idle
+        - PlaytformerPlayersActions.JumpOffOnewayPlatform
+        - Jump
+        - InAir
         byteData: 01
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 03000000030000000300000003000000030000000300000017000000170000001700000017000000170000000300000001000000
+        paramDataType: 030000000300000003000000030000000300000003000000170000001700000017000000170000000300000001000000030000001700000017000000
         paramName:
         - actionName
         - actionName
@@ -381,15 +385,17 @@ MonoBehaviour:
         - actionName
         - actionName
         - actionName
-        - Jump
         - Grounded
         - NotGrounded
         - Idle
         - Movement
         - animName
         - EveryFrame
-        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b00000000000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        - actionName
+        - Jump
+        - InAir
+        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a000000000000000b0000000c0000000d000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000
     - name: Movement
       description: 
       colorIndex: 0
@@ -442,12 +448,13 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.MissingAction
         - PlaytformerPlayersActions.ResetAirJumps
         - PlaytformerPlayersActions.IsIdleCheck
-        - PlaytformerPlayersActions.JumpInput
         - PlaytformerPlayersActions.GroundCayouteTime
         - PlaytformerPlayersActions.GroundCheck
         - PlaytformerPlayersActions.SetStateAnimation
         - PlaytformerPlayersActions.Flip
         - PlaytformerPlayersActions.HorizontalMovement
+        - HutongGames.PlayMaker.Actions.MissingAction
+        - PlaytformerPlayersActions.GroundJumpInput
         customNames:
         - 
         - 
@@ -465,10 +472,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 00000000000000000101010101010101
-        actionIsOpen: 01010101010101010101010101010101
-        actionStartIndex: 000000000100000002000000030000000400000005000000060000000700000008000000080000000a0000000b0000000b0000000d0000000f0000000f000000
-        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c5300178c5300178c5300100000000d89731058861160400000000d897310563505301000000004c5a2401
+        - 
+        actionEnabled: 0000000000000000010101010101010001
+        actionIsOpen: 0101010101010101010101010101010101
+        actionStartIndex: 000000000100000002000000030000000400000005000000060000000700000008000000080000000a0000000a0000000c0000000e0000000e0000001000000011000000
+        actionHashCodes: 78c5300178c5300178c5300178c5300178c5300178c5300178c5300178c5300100000000d897310500000000d897310563505301000000004c5a240178c53001d8973105
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -502,16 +510,18 @@ MonoBehaviour:
         - PlayerBehaviour.ResetAirJumps
         - Idle
         - 
-        - Jump
         - 
         - InAir
         - Run
+        - PlaytformerPlayersActions.JumpOffOnewayPlatform
+        - Jump
+        - InAir
         byteData: 01000020410000a041
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0300000003000000030000000300000003000000030000000300000003000000170000001700000017000000170000001700000003000000010000000200000002000000
+        paramDataType: 03000000030000000300000003000000030000000300000003000000030000001700000017000000170000001700000003000000010000000200000002000000030000001700000017000000
         paramName:
         - actionName
         - actionName
@@ -523,15 +533,17 @@ MonoBehaviour:
         - actionName
         - Idle
         - Movement
-        - Jump
         - Grounded
         - NotGrounded
         - animName
         - EveryFrame
         - speed
         - horizontalDrag
-        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d000000000000000100000005000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000400000004000000
+        - actionName
+        - Jump
+        - InAir
+        paramDataPos: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000000000001000000050000000d0000000e0000000f000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000400000004000000000000000000000000000000
     - name: Dash
       description: 
       colorIndex: 0

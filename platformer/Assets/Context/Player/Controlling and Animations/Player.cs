@@ -156,6 +156,13 @@ namespace PlaytformerPlayersActions
         }
         #endregion
 
+        public OnewayPlatformManager CheckOnewayPlatformManager()
+        {
+            var col = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1f, 0.05f), CapsuleDirection2D.Horizontal, 0f, CollisionLayer);
+            return col.GetComponent<OnewayPlatformManager>();
+
+        }
+
         private void OnDrawGizmos()
         {
             Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
