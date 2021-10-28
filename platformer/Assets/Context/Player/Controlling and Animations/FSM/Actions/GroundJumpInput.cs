@@ -27,7 +27,11 @@ namespace PlaytformerPlayersActions
 
         public void SendJump()
         {
-            if(player.Movement.y < -0.1f)
+            OnewayPlatformJumpLogic();
+        }
+        void OnewayPlatformJumpLogic()
+        {
+            if (player.Movement.y < -0.1f)
             {
                 OnewayPlatformManager opm = player.CheckOnewayPlatformManager();
                 if (opm != null)
@@ -38,13 +42,12 @@ namespace PlaytformerPlayersActions
                 else
                 {
                     Fsm.Event(Jump);
-                }                      
+                }
             }
             else
             {
                 Fsm.Event(Jump);
             }
-
         }
     }
 }
