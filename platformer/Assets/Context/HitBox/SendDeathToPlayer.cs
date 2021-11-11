@@ -13,7 +13,6 @@ public class SendDeathToPlayer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<Player>().Death();
-            Debug.Log("asd");
         }
     }
 }

@@ -7,6 +7,8 @@ using UnityEngine.InputSystem.Interactions;
 using System;
 using DG.Tweening;
 using OwnTimerImlementation;
+using UnityEngine.SceneManagement;
+using Newtonsoft.Json; 
 
 namespace PlaytformerPlayersActions
 {
@@ -45,6 +47,7 @@ namespace PlaytformerPlayersActions
         #endregion
 
         #region global things
+        GameSaves gameSaves;
 
         public PlayerMediator Mediator { get; private set; }
         public Timers PlayerTimings { get; private set; }
@@ -71,17 +74,37 @@ namespace PlaytformerPlayersActions
             HorzontalDrag = InitHorizontalDrag;
             VerticalDrag = InitVerticalDrag;
 
-            AllowedAbilities.CanAirJump = false;
-            AllowedAbilities.CanDash = false;
-            AllowedAbilities.CanWallSlide = false;
+            AllowedAbilities.CanAirJump = JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.CanAirJump;
+            AllowedAbilities.CanDash = JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.CanDash;
+            AllowedAbilities.CanWallSlide = JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.CanWallSlide;
+
+            Rb.velocity = Vector2.zero;
         }
 
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += SceneLoaded;
+
+        }
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= SceneLoaded;
+        }
+
+        private void SceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (scene.name == SceneManager.GetActiveScene().name)
+            {
+                //Rb.MovePosition(JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.currentCheckPoint);
+                Rb.velocity = Vector2.zero;
+                Rb.position = JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.currentCheckPoint;
+            }
+        }
         public void Death()
         {
-            Rb.velocity = Vector2.zero;
-            Rb.position = CurrentRespawnPoint; // respawn
-
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
 
         private void FixedUpdate()
         {     

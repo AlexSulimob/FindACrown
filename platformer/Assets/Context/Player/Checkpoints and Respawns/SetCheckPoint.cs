@@ -22,7 +22,8 @@ public class SetCheckPoint : MonoBehaviour
                 player = other.GetComponent<Player>();
 
 
-            player.CurrentRespawnPoint = respawnPoint;
+            JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.currentCheckPoint = respawnPoint;
+            JasonWeimannSingleton.Singleton<GameSaves>.Instance.Save();
         }
     }
 
