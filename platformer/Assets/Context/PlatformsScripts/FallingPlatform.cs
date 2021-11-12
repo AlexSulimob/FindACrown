@@ -5,12 +5,14 @@ using UnityEngine;
 public class FallingPlatform : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator anim;
     public float fallingSpeed = 20f;
     public float waitTimeToFall = 1f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,6 +24,7 @@ public class FallingPlatform : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            anim.SetBool("StartFalling", true);
             StartCoroutine("Fall");
             //collision.collider.transform.SetParent(transform);       
         }

@@ -114,7 +114,10 @@ namespace PlaytformerPlayersActions
         #endregion
 
         #region Input Calls
-
+        void OnRestartLevel()
+        {
+            Death();
+        }
         void OnMovement(InputValue value)
         {
             var RawMovementInput = value.Get<Vector2>();
