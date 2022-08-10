@@ -1,6 +1,7 @@
 # FindACrown Platformer game where you need to find a crown.
 
-#You can play it there 
+# You can play it there 
+
 https://focus705.itch.io/findthecrown
 
 Simple unity 2d-platformer project for education
