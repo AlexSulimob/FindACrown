@@ -110,7 +110,12 @@ namespace PlaytformerPlayersActions
         {     
             Drag();
         }
-
+        private void Update()
+        {
+            AllowedAbilities.CanAirJump = JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.CanAirJump;
+            AllowedAbilities.CanDash = JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.CanDash;
+            AllowedAbilities.CanWallSlide = JasonWeimannSingleton.Singleton<GameSaves>.Instance.data.CanWallSlide;
+        }
         #endregion
 
         #region Input Calls

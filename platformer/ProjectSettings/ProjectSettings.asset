@@ -128,7 +128,8 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: fd7cf7e68ee45294c915aefeb506fbd1, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -303,7 +304,9 @@ PlayerSettings:
     Android: 1
     iPhone: 1
     tvOS: 1
-  m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupLightmapEncodingQuality:
+  - m_BuildTarget: WebGL
+    m_EncodingQuality: 1
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding: []
   playModeTestRunnerEnabled: 0
@@ -544,7 +547,7 @@ PlayerSettings:
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 1
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
@@ -553,7 +556,7 @@ PlayerSettings:
     1: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER;PLAYMAKER_TMPRO;PLAYMAKER_URP
     4: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
     7: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
-    13: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
+    13: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER;PLAYMAKER_TMPRO;PLAYMAKER_URP
     14: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
     19: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
     21: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
